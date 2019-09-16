@@ -1,0 +1,3 @@
+1. UserDaoImpl, findByUsername需要用try-catch处理, 因为不处理会抛异常, 不会返回null;
+2. RegisterServlet, session获取完验证码后, 要删除验证码
+3. RegisterServlet, 判断验证码的值时, 要在if中增加是否为null的判断, 否则用户注册用户时, 不输入验证码会报空指针
